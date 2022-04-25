@@ -69,11 +69,20 @@ namespace InterfazGrafica.Fomularios.Meraki
                 buscar.Show();
                 button1.Enabled = false;
                 button3.Enabled = false;
-                estado_sistema.Text = _manejo_Vistas.Get_Estado_Sistema();
-                nombre_ce.Text = _manejo_Vistas.Get_CeName(codigo.Text);
-                template_nombre.Text = _manejo_Vistas.CargarTemplate(codigo.Text);
-                _manejo_Vistas.Cargar_Dispositivos(codigo.Text);
-                total_registros.Text = $"Total de Registros: {_manejo_Vistas.Get_CantidadDispositivos()}";
+                string estado = _manejo_Vistas.Get_Estado_Sistema();
+
+                if (!string.IsNullOrEmpty(estado))
+                {
+                    estado_sistema.Text = estado;
+                    nombre_ce.Text = _manejo_Vistas.Get_CeName(codigo.Text);
+                    template_nombre.Text = _manejo_Vistas.CargarTemplate(codigo.Text);
+                    _manejo_Vistas.Cargar_Dispositivos(codigo.Text);
+                    total_registros.Text = $"Total de Registros: {_manejo_Vistas.Get_CantidadDispositivos()}";
+                }
+                else
+                {
+                    estado_sistema.Text = "Error de Servidor";
+                }
                 button1.Enabled = true;
                 button3.Enabled = true;
                 buscar.Close();
