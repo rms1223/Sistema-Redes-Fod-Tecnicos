@@ -225,7 +225,7 @@ namespace FOD_Meraki.Clases.Api_Fod
         {
             get
             {
-                return "1436790587:AAGNQje4_mCQDWIh5exjnZvpKDiLgyz3t5w";
+                return "";
             }
         }
 
