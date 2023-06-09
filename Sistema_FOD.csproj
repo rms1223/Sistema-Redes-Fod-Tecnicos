@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -42,23 +42,23 @@
     <ApplicationIcon>Simbolo_Full color.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Cake.Powershell, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Cake.Powershell.1.0.1\lib\net46\Cake.Powershell.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.23.2.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.23.2\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
-      <HintPath>packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
@@ -66,32 +66,39 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Dynamic, Version=1.3.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\DynamicLanguageRuntime.1.3.0\lib\net45\Microsoft.Dynamic.dll</HintPath>
+    <Reference Include="Microsoft.Dynamic, Version=1.3.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>packages\DynamicLanguageRuntime.1.3.3\lib\net452\Microsoft.Dynamic.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Scripting, Version=1.3.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\DynamicLanguageRuntime.1.3.0\lib\net45\Microsoft.Scripting.dll</HintPath>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Scripting.Metadata, Version=1.3.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\DynamicLanguageRuntime.1.3.0\lib\net45\Microsoft.Scripting.Metadata.dll</HintPath>
+    <Reference Include="Microsoft.Scripting, Version=1.3.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>packages\DynamicLanguageRuntime.1.3.3\lib\net452\Microsoft.Scripting.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.3.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>packages\DynamicLanguageRuntime.1.3.3\lib\net452\Microsoft.Scripting.Metadata.dll</HintPath>
     </Reference>
-    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
-      <HintPath>packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>packages\SSH.NET.2020.0.2\lib\net40\Renci.SshNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\lib\net46\System.Data.SQLite.dll</HintPath>
+    <Reference Include="System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\lib\net46\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.SQLite.EF6, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>packages\System.Data.SQLite.EF6.1.0.113.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
@@ -104,15 +111,18 @@
     <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Cake.Powershell.1.0.1\lib\net46\System.Management.Automation.dll</HintPath>
     </Reference>
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
@@ -124,89 +134,90 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telegram.Bot, Version=15.7.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Telegram.Bot.15.7.1\lib\net45\Telegram.Bot.dll</HintPath>
+    <Reference Include="Telegram.Bot, Version=19.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Telegram.Bot.19.0.0\lib\netstandard2.0\Telegram.Bot.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Api_Fod\Equipos_Redes_Fod.cs" />
+    <Compile Include="Clases\Api_Fod\OperationsDevices.cs" />
     <Compile Include="Clases\Api_Fod\Key.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\CartelCE.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\CeRedEducativa.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\EquiposInfo.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\Local_Devices.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\ManejoArubaRequest.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\Manejo_Vistas.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\Network_Device.cs" />
-    <Compile Include="Clases\Api_Fod\Modelo\PingDevicesAruba.cs" />
-    <Compile Include="Clases\Cantiades_Equipos.cs" />
-    <Compile Include="Clases\Informacion.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\Cartel.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\CentroEducativoRedEducativa.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\DeviceInformation.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\LocalDevices.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\ControlArubaRequest.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\ControlViews.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\NetworkDevice.cs" />
+    <Compile Include="Clases\Api_Fod\Modelo\ToolPingDevicesAruba.cs" />
+    <Compile Include="Clases\Api_Fod\Query.cs" />
+    <Compile Include="Clases\CountDevices.cs" />
+    <Compile Include="Clases\ContactInformation.cs" />
     <Compile Include="Clases\Notify\TelegramNotify.cs" />
-    <Compile Include="Fomularios\Estandar_Puertos.cs">
+    <Compile Include="Forms\PortStandardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\Estandar_Puertos.Designer.cs">
-      <DependentUpon>Estandar_Puertos.cs</DependentUpon>
+    <Compile Include="Forms\Port_Standard.Designer.cs">
+      <DependentUpon>PortStandardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\FodApi\Buscar.cs">
+    <Compile Include="Forms\Api\SearchLoadForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\FodApi\Buscar.Designer.cs">
-      <DependentUpon>Buscar.cs</DependentUpon>
+    <Compile Include="Forms\Api\SearchLoadForm.Designer.cs">
+      <DependentUpon>SearchLoadForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\FodApi\DireccionamientoIp.cs">
+    <Compile Include="Forms\Api\DireccionamientoIp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\FodApi\DireccionamientoIp.Designer.cs">
+    <Compile Include="Forms\Api\DireccionamientoIp.Designer.cs">
       <DependentUpon>DireccionamientoIp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\FodApi\EquiposCarteles.cs">
+    <Compile Include="Forms\Api\DevicesCartelesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\FodApi\EquiposCarteles.Designer.cs">
-      <DependentUpon>EquiposCarteles.cs</DependentUpon>
+    <Compile Include="Forms\Api\DevicesCartelesForm.Designer.cs">
+      <DependentUpon>DevicesCartelesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\FodApi\ExportDatos.cs">
+    <Compile Include="Forms\Api\ExportDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\FodApi\ExportDatos.Designer.cs">
-      <DependentUpon>ExportDatos.cs</DependentUpon>
+    <Compile Include="Forms\Api\ExportDataForm.Designer.cs">
+      <DependentUpon>ExportDataForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\FodApi\HerramientasAruba.cs">
+    <Compile Include="Forms\Api\ToolArubaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\FodApi\HerramientasAruba.Designer.cs">
-      <DependentUpon>HerramientasAruba.cs</DependentUpon>
+    <Compile Include="Forms\Api\ToolArubaForm.Designer.cs">
+      <DependentUpon>ToolArubaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\FodApi\RedEducativa.cs">
+    <Compile Include="Forms\Api\RedEducativaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\FodApi\RedEducativa.Designer.cs">
-      <DependentUpon>RedEducativa.cs</DependentUpon>
+    <Compile Include="Forms\Api\RedEducativaForm.Designer.cs">
+      <DependentUpon>RedEducativaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\FodApi\Zonasaps.cs">
+    <Compile Include="Forms\Api\ZoneApForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\FodApi\Zonasaps.Designer.cs">
-      <DependentUpon>Zonasaps.cs</DependentUpon>
+    <Compile Include="Forms\Api\ZoneApForm.Designer.cs">
+      <DependentUpon>ZoneApForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\Meraki\Herramientas_dispositivos.cs">
+    <Compile Include="Forms\Devices\DevicesTool.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\Meraki\Herramientas_dispositivos.Designer.cs">
-      <DependentUpon>Herramientas_dispositivos.cs</DependentUpon>
+    <Compile Include="Forms\Devices\DevicesTool.Designer.cs">
+      <DependentUpon>DevicesTool.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\Meraki\Listar_Redes.cs">
+    <Compile Include="Forms\Devices\ListNetworks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\Meraki\Listar_Redes.Designer.cs">
-      <DependentUpon>Listar_Redes.cs</DependentUpon>
+    <Compile Include="Forms\Devices\ListNetworks.Designer.cs">
+      <DependentUpon>ListNetworks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fomularios\Meraki\Redes_Locales.cs">
+    <Compile Include="Forms\Devices\LocalNetworks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fomularios\Meraki\Redes_Locales.Designer.cs">
-      <DependentUpon>Redes_Locales.cs</DependentUpon>
+    <Compile Include="Forms\Devices\LocalNetworks.Designer.cs">
+      <DependentUpon>LocalNetworks.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -216,41 +227,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Seguridad\Lectura_File.cs" />
-    <Compile Include="Seguridad\Seguriadad_Archivos.cs" />
-    <Compile Include="Seguridad\Var_Name.cs" />
-    <EmbeddedResource Include="Fomularios\Estandar_Puertos.resx">
-      <DependentUpon>Estandar_Puertos.cs</DependentUpon>
+    <Compile Include="Security\ReadFile.cs" />
+    <Compile Include="Security\SecurityFile.cs" />
+    <Compile Include="Security\VariablesFile.cs" />
+    <EmbeddedResource Include="Forms\Port_Standard.resx">
+      <DependentUpon>PortStandardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\FodApi\Buscar.resx">
-      <DependentUpon>Buscar.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Api\SearchLoadForm.resx">
+      <DependentUpon>SearchLoadForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\FodApi\DireccionamientoIp.resx">
+    <EmbeddedResource Include="Forms\Api\DireccionamientoIp.resx">
       <DependentUpon>DireccionamientoIp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\FodApi\EquiposCarteles.resx">
-      <DependentUpon>EquiposCarteles.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Api\DevicesCartelesForm.resx">
+      <DependentUpon>DevicesCartelesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\FodApi\ExportDatos.resx">
-      <DependentUpon>ExportDatos.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Api\ExportDataForm.resx">
+      <DependentUpon>ExportDataForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\FodApi\HerramientasAruba.resx">
-      <DependentUpon>HerramientasAruba.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Api\ToolArubaForm.resx">
+      <DependentUpon>ToolArubaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\FodApi\RedEducativa.resx">
-      <DependentUpon>RedEducativa.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Api\RedEducativaForm.resx">
+      <DependentUpon>RedEducativaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\FodApi\Zonasaps.resx">
-      <DependentUpon>Zonasaps.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Api\ZoneApForm.resx">
+      <DependentUpon>ZoneApForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\Meraki\Herramientas_dispositivos.resx">
-      <DependentUpon>Herramientas_dispositivos.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Devices\DevicesTool.resx">
+      <DependentUpon>DevicesTool.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\Meraki\Listar_Redes.resx">
-      <DependentUpon>Listar_Redes.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Devices\ListNetworks.resx">
+      <DependentUpon>ListNetworks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fomularios\Meraki\Redes_Locales.resx">
-      <DependentUpon>Redes_Locales.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Devices\LocalNetworks.resx">
+      <DependentUpon>LocalNetworks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -317,10 +328,10 @@
     <PropertyGroup>
       <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
-    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
   </Target>
-  <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
-  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
 </Project>

@@ -26,7 +26,7 @@ namespace InterfazGrafica
             _ = new TelegramNotify();
             InitializeComponent();
             label2.Text="RMS "+ DateTime.Now.ToString("yyyy");
-            _ = new Lectura_File();
+            _ = new ReadFile();
             _leftBorder = new Panel();
             _leftBorder.Size = new Size(7, 30);
             panel_menu.Controls.Add(_leftBorder);
@@ -168,7 +168,7 @@ namespace InterfazGrafica
             {
 
                 meraki_LR.Enabled = false;
-                Listar_Redes listar_Redes = Listar_Redes.Get_instance;
+                ListNetworks listar_Redes = ListNetworks.Get_instance;
                 listar_Redes.Show();
                 Cargar_panel(listar_Redes);
                 meraki_LR.Enabled = true;
@@ -206,7 +206,7 @@ namespace InterfazGrafica
             {
                 
                 button1.Enabled = false;
-                Redes_Locales redes_Locales = new Redes_Locales();
+                LocalNetworks redes_Locales = new LocalNetworks();
                 Cargar_panel(redes_Locales);
                 button1.Enabled = true;
             }
@@ -229,7 +229,7 @@ namespace InterfazGrafica
             {
 
                 button2.Enabled = false;
-                RedEducativa _redEducativa = new RedEducativa();
+                RedEducativaForm _redEducativa = new RedEducativaForm();
                 Cargar_panel(_redEducativa);
                 button2.Enabled = true;
             }

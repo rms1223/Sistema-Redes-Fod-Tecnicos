@@ -15,7 +15,7 @@ namespace FOD_Meraki.Clases.Notify
         {
             try
             {
-                _telegram_bot = new TelegramBotClient(Key.Key_Telegram);
+                _telegram_bot = new TelegramBotClient(Key.KeyTelegram);
                 if (_chat == null)
                 {
                     _chat = new Chat

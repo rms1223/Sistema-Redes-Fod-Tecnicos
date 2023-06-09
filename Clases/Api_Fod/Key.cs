@@ -10,7 +10,7 @@ namespace FOD_Meraki.Clases.Api_Fod
 
         public static string XApiFodName { get; set; }
 
-        public static string BaseUrl_V0
+        public static string PathApiQuery
         {
             get
             {
@@ -18,213 +18,210 @@ namespace FOD_Meraki.Clases.Api_Fod
                 return "http://localhost:4000/";
             }
         }
-       
-
-        public static string Url_Estado_Sistema
+        public static string PathApiStatusSystem
         {
             get
             {
                 return "api/estado/sistema/";
             }
         }
-        public static string Url_Device_Codigo
+        public static string PathApiDevice
         {
             get
             {
                 return "api/device/codigo/";
             }
         }
-        public static string Url_CE_RedEducativa
+        public static string PathApiRedEducativa
         {
             get
             {
                 return "api/ce/rededucativa/";
             }
         }
-        public static string Url_Cartel_CE
+        public static string PathApiCarteles
         {
             get
             {
                 return "api/ce/informacion/";
             }
         }
-        public static string Url_Devices_Clients_Codigo
+        public static string PathApiClientsInNetwork
         {
             get
             {
                 return "api/clients/codigo/";
             }
         }
-        public static string Url_Aruba_ToolPing
+        public static string PathApiArubaToolPing
         {
             get
             {
                 return "api/tools/aruba/ping/";
             }
         }
-        public static string Url_CE
+        public static string PathApiCentroEducativoInformation
         {
             get
             {
                 return "api/institucion/";
             }
         }
-        public static string Url_Template
+        public static string PathApiTemplateInformation
         {
             get
             {
                 return "api/red/template/";
             }
         }
-        public static string Organizacion
+        public static string OrganizationName
         {
             get
             {
                 return "Fundación Omar Dengo - Conzultek";
             }
         }
-        public static string Id_Organizacion
+        public static string IdOrganization
         {
             get
             {
                 return "846353";
             }
         }
-        public static string OrganizationsUrl
+        public static string OrganizationsName
         {
             get
             {
                 return "organizations";
             }
         }
-        public static string NetworksUrl
+        public static string NetworksName
         {
             get
             {
                 return "networks";
             }
         }
-        public static string DevicesUrl
+        public static string DevicesName
         {
             get
             {
                 return "devices";
             }
         }
-
-        public static string DevicesStatus
+        public static string PathDevicesStatus
         {
             get
             {
                 return "appliance/uplink/statuses";
             }
         }
-        public static string StatusUrl
+        public static string StatusName
         {
             get
             {
                 return "uplink";
             }
         }
-        public static string Codigo_Red
+        public static string CodeNetworkName
         {
             get
             {
                 return "CODIGO_DE_RED";
             }
         }
-        public static string Nombre_CE
+        public static string NameCentroEducativo
         {
             get
             {
                 return "NOMBRE_CE";
             }
         }
-        public static string TAG1
+        public static string TAG1Name
         {
             get
             {
                 return "TAG1(CODIGO_CE)";
             }
         }
-        public static string TAG2
+        public static string TAG2Name
         {
             get
             {
                 return "TAG2(CARTEL)";
             }
         }
-        public static string TAG3
+        public static string TAG3Name
         {
             get
             {
                 return "TAG3(MODALIDAD)";
             }
         }
-        public static string TAG4
+        public static string TAG4Name
         {
             get
             {
                 return "TA4(SITIO)";
             }
         }
-        public static string Time_Zone
+        public static string TimeZoneName
         {
             get
             {
                 return "America/Los_Angeles";
             }
         }
-        public static string Api_Appliance
+        public static string ApplianceName
         {
             get
             {
                 return "appliance";
             }
         }
-        public static string Api_Wireless
+        public static string WirelessName
         {
             get
             {
                 return "wireless";
             }
         }
-        public static string Api_Switch
+        public static string SwitchName
         {
             get
             {
                 return "switch";
             }
         }
-        public static string Config_templates
+        public static string ConfigTemplatesName
         {
             get
             {
                 return "configTemplates";
             }
         }
-        public static string Image_On
+        public static string PathImageOn
         {
             get
             {
                 return Path.Combine(Application.StartupPath, @"Data\on.png");
             }
         }
-        public static string Image_Off
+        public static string PathImageOff
         {
             get
             {
                 return Path.Combine(Application.StartupPath, @"Data\off.png");
             }
         }
-        public static string IP_Router
+        public static string DefaultIPRouter
         {
             get
             {
                 return "10.10.10.1";
             }
         }
-        public static string Key_Telegram
+        public static string KeyTelegram
         {
             get
             {
@@ -232,7 +229,7 @@ namespace FOD_Meraki.Clases.Api_Fod
             }
         }
 
-        public static string Path_File_Db
+        public static string PathFileDatabase
         {
             get
             {
@@ -240,25 +237,39 @@ namespace FOD_Meraki.Clases.Api_Fod
             }
         }
 
-        public static string Path_File_Py
+        public static string PathFilePython
         {
             get
             {
                 return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), @"Redes_Fod\meraki-python.py");
             }
         }
-        public static string Path_File_Py_Search
+        public static string PathFilePythonSearch
         {
             get
             {
                 return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), @"Redes_Fod\meraki-python-search.py");
             }
         }
-        public static string Path_Python_Root
+        public static string PathRootPython
         {
             get
             {
                 return @"C:\Python39\python.exe";
+            }
+        }
+        public static string PrimaryStatusDevice
+        {
+            get
+            {
+                return "ONLINE";
+            }
+        }
+        public static string SecondStatusDevice
+        {
+            get
+            {
+                return "UP";
             }
         }
     }

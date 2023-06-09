@@ -68,8 +68,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 58);
             this.label1.TabIndex = 13;
-            this.label1.Text = "FUNDACIÓN OMAR DENGO Dirección de Tecnologías de Información Unidad Centro de Sop" +
-    "orte Infraestructura";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel_meraki
@@ -164,12 +162,11 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 31);
             this.label2.TabIndex = 4;
-            this.label2.Text = "RMS-FOD 2021";
+            this.label2.Text = "RMS 2021";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
